@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <title>Mi Framework</title>
+</head>
+<body>
+    <header> <!--Header color rojo-->
+        <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Galería</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content"> <!--Dropdown para menú desplegable-->
+      <a href="#">Form</a>
+      <a href="#">Tablas</a>
+      <a href="#">Columnas</a>
+    </div>
+  </li>
+</ul>
+        <h1>Bienvenido a Mi Framework</h1> 
+        <p>Utiliza esta plantilla para crear un sítio web simple.</p>
+    </header>
+
+<!--Primera sección con un flex container para que se vea en 3 contenedeores en línea-->
+
+    <div class="flex-container">
+        <div>
+            <h2>Simple</h2>
+            <p>Diseñado para que la información sea fácil e intuitiva. </p>
+        </div>
+
+        <div>
+            <h2>Plantilla con elementos</h2>
+            <p>Acá obtienes los elementos más usados como formularios y tablas..</p>
+        </div>
+
+        <div>
+            <h2>Colores</h2>
+            <p>Paleta de colores educativos y enérgicos al estilo Google.</p>
+        </div>
+    </div>
+
+
+
+
+<!-- Formulario con imputs: label, select y textarea-->
+
+
+<div class="container-form">
+  <form action="/action_page.php">
+
+    <div class="row">
+        <div class="col-25">
+        <label for="fname">Nombres</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Tu nombre">
+        </div>
+    </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Apellidos</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">País</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="País">
+        <option value="australia">Chile</option>
+        <option value="canada">Corea</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Comentarios</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Escribe aquí tus comentarios.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Enviar">
+  </div>
+  </form>
+</div>
+
+<!-- Galería-->
+
+<div class="container-2">
+
+<div class="gallery">
+  <a target="_blank" href="assets/img/pixel2.jpg">
+    <img src="assets/img/pixel2.jpg" alt="Imagen de un pinguito en pixeles" width="600" height="400">
+  </a>
+  <div class="desc">Descrpción de la primera imagen</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="assets/img/pixel4.jpg">
+    <img src="assets/img/pixel4.jpg" alt="Imagen de un gatito tierno animado" width="600" height="400">
+  </a>
+  <div class="desc">Descrpción de la segunda imagen</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="assets/img/pixel5.jpg">
+    <img src="assets/img/pixel5.jpg" alt="Imagen de un conejo con una zanahoria" width="600" height="400">
+  </a>
+  <div class="desc">Descrpción de la tercera imagen</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="assets/img/pixel6.jpg">
+    <img src="assets/img/pixel6.jpg" alt="Imagen de un panda trotando" width="600" height="400">
+  </a>
+  <div class="desc">Descrpción de la cuarta imagen</div>
+</div>
+
+</div>
+
+<!--Otra sección con un diseño de contentedor estándar para mostrar los botones-->
+
+<div class="container">
+    <h2>Mis botones</h2>
+
+<p>Usa uno de estos botones para: ver más, llamado a la acción, o enviar un mensaje.:</p>
+
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+<button class="button button3">Red</button>
+<button class="button button4">Gray</button>
+<button class="button button5">Black</button>
+</div>
+
+<!--Columnas en otro tipo de contenedor-->
+
+    <div class="container-3">
+
+        <section class = "fra">
+        <section class="fra-1">
+            <h2>Acerca de mí</h2>
+            <p>Este framework fue diseñado para el curso: Diseño y desarrollo web + IA, de la Universidad Católica de Temuco. </p>
+        </section>
+        <section class="fra-2">
+            <h2>Objetivos</h2>
+            <ul>
+                <li> -Para demostrar que podemos tener nuestro propio Bootstrap</li>
+                <li> -Tener un diseño/platilla hecha con anterioridad para ahorrar tiempo</li>
+                <li> -Personalizar nuestra página web con un estilo original</li>
+            </ul>
+        </section>
+
+        <section class="fra-3">
+            <h2>Aprendizajes</h2>
+            <p>Mejorar habilidad con elementos CSS y desrrollar la creatividad, teniendo presente la accesibilidad y usabilidad.</p>       
+        </section>
+
+        <section class="fra-4">
+            <h2>Desafíos</h2>
+            <p>Hacer una estructura HTML semántica, ya que esta información fue extraída de W3School, pero no cuenta con etiquetas section o aside, sólo div..</p>
+
+        </section>
+    </div>
+
+    <!--Se muestran dos tipos de tablas-->
+    <div class = "container">
+        <h2>Ejemplo de tabla simple:</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+
+
+<h2>Ejemplo de tabla triple</h2>
+
+
+<p>Puedes usar una tabla de 3 columnas o añadir filas y/o columnas en caso de ser necesario.</p>
+<table>
+
+    
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+
+    </div>
+
+    <!--Se muestran los link-->
+    <div class="container">
+        <h2>Enlaces perzonalidos</h2>
+
+<p><b><a href="default.asp" target="_blank">Este es un link de color rosado para destacarlo de los otros colores</a></b></p>
+
+
+    </div>
+        
+    <!--Otro tipo de contenedor para mostrar las páginas-->
+<div class="container-4">
+
+<h2>Paginación </h2>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>    
+
+
+</div>
+
+</body>
+
+</html>
